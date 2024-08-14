@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=roboto:wght@400;700&display=swap"
+    />
+    <title>List of countries</title>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Countries list</h1>
+      <button id="toggleButton" class="btn btn-primary">Show countries</button>
+      <div id="countryListContainer" style="display: none">
+        <input type="text" id="searchInput" placeholder="Search countries..." />
+        <ul id="country-list" class="list-group"></ul>
+      </div>
+    </div>
+    <div id="country-details" class="container" style="display: none">
+      <h1 id="country-name"></h1>
+      <img id="country-flag" src="" alt="Country flag" />
+      <p>Capital: <span id="country-capital"></span></p>
+      <p>Population: <span id="country-population"></span></p>
+      <p>Region: <span id="country-region"></span></p>
+    </div>
+  </body>
+</html>
